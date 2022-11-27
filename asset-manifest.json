@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/development/static/css/main.17c7c06d.css",
-    "main.js": "/development/static/js/main.7a832427.js",
+    "main.js": "/development/static/js/main.d463cd23.js",
     "static/media/got7_logo.png": "/development/static/media/got7_logo.6a27d1ee384d1f4bd1b3.png",
     "index.html": "/development/index.html",
     "main.17c7c06d.css.map": "/development/static/css/main.17c7c06d.css.map",
-    "main.7a832427.js.map": "/development/static/js/main.7a832427.js.map"
+    "main.d463cd23.js.map": "/development/static/js/main.d463cd23.js.map"
   },
   "entrypoints": [
     "static/css/main.17c7c06d.css",
-    "static/js/main.7a832427.js"
+    "static/js/main.d463cd23.js"
   ]
 }
