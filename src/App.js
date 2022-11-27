@@ -136,6 +136,19 @@ function App() {
     }
   }
 
+  /*Function 5: Cart clearing */
+  function clearCart(name) {
+    setCart([]);
+    setTotal(0);
+  }
+
+  /*Function 6: Reset Filters */
+  function resetFilters(name) {
+    Object.keys(check).map(type => check[type][1](true));
+    Object.keys(produce).map(producer => produce[producer][1](true));
+    filterChanger(null, "year");
+  }
+
   const radioTheme = {
     '&.Mui-checked': {color: "#4CAF50"}, marginLeft: "5px"};
 
@@ -203,6 +216,7 @@ function App() {
               }}/>} sx={{color: '#1a1a1a'}} label={single_producer} />)}
             </FormGroup> 
           </div> 
+          <button class="checkout-button" onClick={() => resetFilters()}>Reset Filters</button>
         </div>
 
         <div class="albums"> 
@@ -216,6 +230,7 @@ function App() {
           {Object.keys(cart).map(got7 => <CartItem name={got7} count={cart[got7]} incrementItem={incrementItem} decrementItem={decrementItem}></CartItem> )}
           <h3>Total: ${total}</h3>
           <button class="checkout-button">Checkout</button>
+          <button class="checkout-button" onClick={() => clearCart()}>Clear Cart</button>
         </div>
 
       </div>
