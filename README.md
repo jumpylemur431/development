@@ -40,3 +40,6 @@ For the cart, there is a cart state a dictionary to hold the state of the cart, 
 **Total**
 
 For the total, there is a total state an integer to hold the total of the items in the cart. When the same "Add to cart" button is clicked by the user, the total is similarily updated with the updateCart function. This is the same for the plus and minus buttons with their own functions, incrementItem or decrementItem where the total is updated as necessary. This keeps track of the aggregate for the React app. 
+
+**Reset and Clear**
+For reseting the items in the cart and resetting the filters, there are two functions that are connected to two buttons. The resetFilters function triggers the filters to reset to the original settings where it is sorted by Year Released and with all the filters checked. The clearCart function will clear the cart of the current items and clear the total. 
